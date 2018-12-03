@@ -1,3 +1,11 @@
+syntax on
+setl number
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+
 " Begin vim-plug config
 " from github.com/junegunn/vim-plug
 " 
@@ -38,6 +46,8 @@ let g:deoplete#enable_at_startup=1
 
 Plug 'zchee/deoplete-go'
 
+Plug 'dracula/vim'
+
 " Plugin options
 " Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
@@ -49,3 +59,5 @@ Plug 'zchee/deoplete-go'
 
 " Initialize plugin system
 call plug#end()
+
+colorscheme dracula
