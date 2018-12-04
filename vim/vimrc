@@ -1,5 +1,7 @@
 syntax on
 setl number
+filetype plugin indent on
+inoremap jj <Esc>
 
 set tabstop=2
 set shiftwidth=2
@@ -42,7 +44,6 @@ else
 	Plug 'roxma/nvim-yarp'
 	Plug 'roxma/vim-hug-neovim-rpc'
 endif
-let g:deoplete#enable_at_startup=1
 
 Plug 'zchee/deoplete-go'
 
@@ -59,5 +60,18 @@ Plug 'dracula/vim'
 
 " Initialize plugin system
 call plug#end()
+
+" Deoplete (autocomplete plugin)
+let g:deoplete#enable_at_startup=1
+
+" Go
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_types = 1
 
 colorscheme dracula
