@@ -6,6 +6,7 @@ inoremap jj <Esc>
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set encoding=utf-8
 
 
 " Begin vim-plug config
@@ -46,6 +47,7 @@ else
 endif
 
 Plug 'zchee/deoplete-go'
+Plug 'zchee/deoplete-jedi'
 
 Plug 'dracula/vim'
 
@@ -74,4 +76,15 @@ let g:go_highlight_operators = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_types = 1
 
-colorscheme dracula
+" Python
+au BufNewFile,BufRead *.py
+  \ set tabstop=4 |
+  \ set softtabstop=4 |
+  \ set shiftwidth=4 |
+  \ set textwidth=79 |
+  \ set expandtab |
+  \ set autoindent | 
+  \ set fileformat=unix 
+let python_highlight_all=1
+
+"colorscheme dracula
