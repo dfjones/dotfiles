@@ -1,7 +1,7 @@
 syntax on
 setl number
 filetype plugin indent on
-inoremap jj <Esc>
+noremap jj <Esc>
 
 set tabstop=2
 set shiftwidth=2
@@ -50,6 +50,8 @@ Plug 'zchee/deoplete-go'
 Plug 'zchee/deoplete-jedi'
 
 Plug 'artur-shaik/vim-javacomplete2'
+
+Plug 'easymotion/vim-easymotion'
 
 Plug 'dracula/vim'
 
