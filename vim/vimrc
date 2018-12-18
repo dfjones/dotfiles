@@ -49,6 +49,8 @@ endif
 Plug 'zchee/deoplete-go'
 Plug 'zchee/deoplete-jedi'
 
+Plug 'artur-shaik/vim-javacomplete2'
+
 Plug 'dracula/vim'
 
 " Plugin options
