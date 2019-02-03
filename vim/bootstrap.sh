@@ -14,5 +14,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 echo "[3/4] Installing deoplete python prereqs"
 pip3 install --user --upgrade pynvim
 
-echo "[3/4] Install Plugins"
+echo "[4/4] Install Plugins"
 vim +PlugInstall +qall
