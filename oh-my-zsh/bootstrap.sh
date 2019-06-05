@@ -11,6 +11,13 @@ fi
 
 ZSH_CUSTOM="$ZSH/custom"
 
+echo "Cloning and installing powerline fonts"
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
 echo "Cloning spaceship theme"
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 
