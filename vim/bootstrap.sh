@@ -9,7 +9,7 @@ cd "$(dirname "$0")/.." || exit
 
 echo "[1/7] Linking neovim init.vm"
 mkdir -p "$HOME/.config/nvim"
-ln -sf "$PWD/vim/vimrc" "$HOME/.config/nvim/init.vim"
+ln -sf "$PWD/vim/init.vim" "$HOME/.config/nvim/init.vim"
 
 echo "[2/7] Linking vimrc"
 ln -sf "$PWD/vim/vimrc" "$HOME/.vimrc"
