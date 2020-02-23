@@ -38,21 +38,6 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 Plug 'fatih/vim-go', { 'tag': '*' }
 
-if has('nvim')
-	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-	Plug 'Shougo/deoplete.nvim'
-	Plug 'roxma/nvim-yarp'
-	Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
-Plug 'zchee/deoplete-go'
-Plug 'zchee/deoplete-jedi'
-
-Plug 'artur-shaik/vim-javacomplete2'
-
-Plug 'easymotion/vim-easymotion'
-
 Plug 'dracula/vim'
 
 " Plugin options
@@ -66,9 +51,6 @@ Plug 'dracula/vim'
 
 " Initialize plugin system
 call plug#end()
-
-" Deoplete (autocomplete plugin)
-let g:deoplete#enable_at_startup=1
 
 " Go
 let g:go_highlight_build_constraints = 1
