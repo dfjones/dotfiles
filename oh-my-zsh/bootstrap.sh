@@ -10,6 +10,7 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
 fi
 
 ZSH_CUSTOM="$ZSH/custom"
+ZSH_PLUGINS="$ZSH/custom/plugins"
 
 echo "Cloning and installing powerline fonts"
 git clone https://github.com/powerline/fonts.git --depth=1
@@ -23,5 +24,11 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/theme
 
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 echo "Set ZSH_THEME="spaceship" in your .zshrc."
+
+echo "Cloning zsh vim mode plugin"
+git clone https://github.com/softmoth/zsh-vim-mode.git "$ZSH_PLUGINS/zsh-vim-mode"
+
+echo "Copying base .zshrc file"
+cp zshrc ~/.zshrc
 
 
