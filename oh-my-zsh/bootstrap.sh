@@ -12,12 +12,12 @@ fi
 ZSH_CUSTOM="$ZSH/custom"
 ZSH_PLUGINS="$ZSH/custom/plugins"
 
-echo "Cloning and installing powerline fonts"
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-./install.sh
+echo "Cloning and installing nerd fonts"
+git clone https://github.com/ryanoasis/nerd-fonts.git --depth=1
+cd nerd-fonts
+./install.sh Meslo
 cd ..
-rm -rf fonts
+rm -rf nerd-fonts
 
 echo "Cloning spaceship theme"
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
